@@ -1,11 +1,24 @@
 import XCTest
-@testable import Entity
+import Entity
 
 final class EntityTests: XCTestCase {
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(Entity().text, "Hello, World!")
-    }
+
+  func testCopiedInstanceIsEqual() {
+    // GIVEN
+    let id1 = EntityIdentifier()
+    let id2 = id1
+
+    // THEN
+    XCTAssertEqual(id1, id2)
+  }
+
+  func testNewInstanceIsUniquene() {
+    // GIVEN
+    let id1 = EntityIdentifier()
+    let id2 = EntityIdentifier()
+
+    // THEN
+    XCTAssertNotEqual(id1, id2)
+  }
 }
+

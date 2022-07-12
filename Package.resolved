@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "identifier",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nicolas-miari/Identifier.git",
+      "state" : {
+        "revision" : "c942cc5dd28c5f3b03602c5fd78d2995047e5907",
+        "version" : "0.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}
